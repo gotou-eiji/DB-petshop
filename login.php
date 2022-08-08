@@ -7,8 +7,8 @@
     if(mysqli_num_rows($logar)>0){
         $_SESSION["user"] = $_POST['login'];
         header('location:dash.php');
-    }else{
-        echo ("<script>alert('Login ou senha incorreto, tente novamente.');
-                window.location.href='index.php';</script>");
+    }
+    else {
+        echo ("<script>alert('Login ou senha incorretos! Tente novamente.');window.location.href='index.php';</script>");
     }
 ?>

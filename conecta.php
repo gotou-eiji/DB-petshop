@@ -1,7 +1,6 @@
 <?php
-    $con = mysqli_connect("127.0.0.1", "root", "", "pet");
+    $con = mysqli_connect("localhost","root","","pet");
     if(!$con){
         echo mysqli_error();
     }
-
 ?>
